@@ -2,6 +2,6 @@
 'name'='Business Task',
 'description' = 'Business Trip Requests'
 'depends' : ['base'],
-'data' : [],
+'data' : ['views/business_task.xml'],
 
 }

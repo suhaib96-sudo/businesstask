@@ -1,1 +1,1 @@
-import business_task
+from odoo import business_task

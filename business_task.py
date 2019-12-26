@@ -1,4 +1,4 @@
-from odoo inport models, fields
+from odoo import models, fields
 
 
 class BusinessTask(models.Model):

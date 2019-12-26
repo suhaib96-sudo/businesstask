@@ -1,4 +1,19 @@
 <? xml version="1.0" encoding="utf-8" ?>
 <odoo>
-
+<menuitem name="Top Menu" id="custom_top_menu"/>
+  <menuitem name="Sub Child Menu" id="custom_sub_menu"
+            parent="custom_top_menu"/>
+  <record id="custom_action" model="ir.action.act_window">
+    <field name="name">Hild menu</field>
+    <field name="res_model">business_task</field>
+    <field name="view_type">form</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+      <p class="oe_view_nocontent_create">
+        Click here for failure
+        </p>
+      </field>
+    </record>
+  <menuitem name="Child Menu" id="custom_child_menu"
+            parent="custom_sub_menu" action="custom_action"/>
 </odoo>

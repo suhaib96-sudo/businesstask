@@ -1,3 +1,2 @@
 # -*- encoding: utf-8 -*-
-
-import models
+from odoo import models
